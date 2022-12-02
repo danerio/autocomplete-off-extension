@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Autocomplete Off",
+  "version": "0.1",
+  "description": "An extension that will disable autocomplete on pages automatically",
+  "content_scripts": [
+    {
+      "js": ["scripts/main.js"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ]
+}
